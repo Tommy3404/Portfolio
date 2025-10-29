@@ -1,0 +1,172 @@
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100vw;
+  background-color: green;
+  padding: 20px 0;
+  color: white;
+  overflow: hidden;
+}
+
+.header h1 {
+  text-align: left;
+  font-size: 28px;
+  margin: 0;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  top: 50%;
+  right: 20px;
+  margin-top: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* ---------- Page Title ---------- */
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+/* ---------- Main Content ---------- */
+.content {
+  padding-bottom: 200px; /* extra space for contact at bottom */
+}
+
+/* ---------- Books Grid ---------- */
+.books {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 30px 50px;
+}
+
+.book {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ---------- Thoughts (personal review) ---------- */
+.thoughts {
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 250px;
+  font-weight: bold;
+  line-height: 1.5;
+  max-height: 400px;       /* max height of review box */
+  overflow-y: auto;         /* scroll when content exceeds height */
+  scrollbar-width: thin;    /* Firefox scrollbar */
+}
+
+.thoughts::-webkit-scrollbar {
+  width: 8px;
+}
+
+.thoughts::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.thoughts::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Hoverable Book Image ---------- */
+.hover {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hover img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hover:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------- Gist Overlay ---------- */
+.gist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.hover:hover .gist {
+  opacity: 1;
+}
+
+/* ---------- Contact Info (always bottom) ---------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #62f04d;
+  color: black;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contact a {
+  color: blue;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 1024px) {
+  .books {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .book {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hover img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thoughts {
+    max-height: 300px;
+  }
+}

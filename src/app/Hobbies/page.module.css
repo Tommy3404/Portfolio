@@ -1,3 +1,4 @@
+/* ---------------- Header ---------------- */
 .header {
   display: flex;
   justify-content: space-between;
@@ -27,9 +28,111 @@
   gap: 12px;
 }
 
-.title{
+/* ---------------- Page Title ---------------- */
+.title {
   display: flex;
   justify-content: center;
-  margin-top: 20;
+  margin-top: 20px;
   text-decoration: underline;
+}
+
+/* ---------------- Page Layout ---------------- */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures footer sticks at bottom */
+}
+
+/* ---------------- Hobbies Grid ---------------- */
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+}
+
+/* ---------------- Hobby Item ---------------- */
+.hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 300px; /* consistent size for all hobbies */
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hover:hover img {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
+
+/* Overlay text centered */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover:hover .overlay {
+  opacity: 1;
+}
+
+/* ---------------- Contact Section ---------------- */
+.contact {
+  margin-top: auto; /* pushes it to bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #62f04d;
+  color: black;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: blue;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 768px) {
+  .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hover {
+    width: 250px;
+    height: 250px;
+  }
 }

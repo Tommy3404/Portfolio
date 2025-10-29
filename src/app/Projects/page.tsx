@@ -15,6 +15,8 @@ export default function Projects() {
       <div className={styles.title}>
         <h1>Projects</h1>
       </div>
+
+      
       
 
       
