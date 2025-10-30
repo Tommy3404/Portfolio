@@ -27,7 +27,7 @@ export default function Home() {
       <div className={styles.align}>
         <div className={styles.textSection}>
           <div className={styles.description}>
-            <p>Hello, my name is Tommy McClure. I am 20 years old and attending college at Fort Hays Tech Northwest. Here are some interesting facts about me:</p>
+            <p>Hello, my name is Tommy McClure. I am 21 years old and attending college at Fort Hays Tech Northwest. Here are some interesting facts about me:</p>
             <ul>
               <li>I wrestled for 9 years.</li>
               <li>I like to play video games</li>

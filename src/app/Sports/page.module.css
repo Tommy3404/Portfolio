@@ -1,0 +1,146 @@
+/* page.module.css */
+
+/* General page layout */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  color: white;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+/* Page title */
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  text-decoration: underline;
+}
+
+/* Section for sports (wrestling, football, etc.) */
+.wrestling,
+.football {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 40px 50px;
+  align-items: center; /* Vertically center text and image */
+}
+
+/* Paragraphs */
+.wrestling p,
+.football p {
+  background-color: green;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Wrestling layout (text left, image right) */
+.wrestling p {
+  flex: 1;
+  max-width: 600px;
+}
+
+.wrestling img {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Football layout (image left, text right) */
+.football {
+  flex-direction: row-reverse; /* Flip order (image left) */
+  justify-content: flex-start; /* Keep content aligned to left */
+  margin-right: 150px;
+}
+
+.football img {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 200px; /* Moves image further left */
+}
+
+.football p {
+  flex: 1;
+  max-width: 450px;
+}
+
+/* Contact section pinned to bottom */
+.contact {
+  margin-top: auto;
+  background-color: #62f04d;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  text-decoration: underline;
+}
+
+.contact p {
+  margin: 5px 0;
+  color: black;
+}
+
+.contact a {
+  color: blue;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+  .wrestling,
+  .football {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrestling p,
+  .football p {
+    max-width: 100%;
+  }
+
+  .wrestling img,
+  .football img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 0; /* Reset margin on small screens */
+  }
+}
