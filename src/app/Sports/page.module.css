@@ -37,8 +37,10 @@
 .title {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 40px 0 20px;
   text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Section for sports (wrestling, football, etc.) */
