@@ -75,6 +75,7 @@
   max-width: 500px;
   flex: 1;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .TM img {
