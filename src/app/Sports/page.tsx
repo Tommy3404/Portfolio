@@ -22,7 +22,7 @@ export default function Sports() {
 
       <div className={styles.wrestling}>
         <p>Wrestling was one of the two main sports I participated in when I was in high school. In wrestling, your goal is to either score more points than your opponent or to pin them. I had been in wrestling for nine years. I had started wrestling when I was in fifth grade. I stopped wrestling after my first year of college wrestling. Throughout my nine years of wrestling, I went to state six times. Out of those six times, I had only placed once. I placed third my junior year.</p>
-        <img src="./wrestling.jpeg" alt="wrestling" />
+        <img src="./Wrestling.jpeg" alt="wrestling" />
       </div>
 
       <div className={styles.title}>

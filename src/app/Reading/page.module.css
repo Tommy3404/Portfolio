@@ -69,7 +69,7 @@
   line-height: 1.5;
   max-height: 400px;       /* max height of review box */
   overflow-y: auto;         /* scroll when content exceeds height */
-  scrollbar-width: thin;    /* Firefox scrollbar */
+  scrollbar-width: thin;    
 }
 
 .thoughts::-webkit-scrollbar {
