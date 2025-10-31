@@ -29,7 +29,7 @@ export default function Hobbies() {
         </Link>
 
         <Link href="../Reading" className={styles.hover}>
-          <img src="./Loz OOT.jpeg" alt="Reading" />
+          <img src="./LoZ OOT.jpeg" alt="Reading" />
           <span className={styles.overlay}>Reading</span>
         </Link>
       </div>
