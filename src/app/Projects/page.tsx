@@ -42,7 +42,14 @@ export default function Projects() {
         <div className={styles.project}>
           <div className={styles.hover}>
             <img src="./ScaryStory.png" alt="Scary Story" />
-            <h2 className={styles.projectName}>Scary Story Page</h2>
+            <a
+              href="https://northwest-tech.github.io/PumpkinWebsite/TheLastCommit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              The Last Commit
+            </a>
             <p className={styles.description}>
               This is a scary story page that I made when the entire class was tasked to design a website that had scary stories for Halloween.
             </p>
@@ -53,7 +60,14 @@ export default function Projects() {
         <div className={styles.project}>
           <div className={styles.hover}>
             <img src="./NationalPark.png" alt="National Park Project" />
-            <h2 className={styles.projectName}>National Park Project</h2>
+            <a
+              href="https://northwest-tech.github.io/NationalParkExplorer/parks/rockymountain.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              National Park Website
+            </a>
             <p className={styles.description}>
               This was the first project that the entire class had to do together. We each made a website about a national park and then combined them into one website.
             </p>
