@@ -104,7 +104,7 @@
   transform: scale(1.05);
 }
 
-/* ---------- Gist Overlay ---------- */
+/* ---------- Gist Overlay (scrollable) ---------- */
 .gist {
   position: absolute;
   top: 0;
@@ -115,17 +115,34 @@
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;   /* start at top for natural scrolling */
   justify-content: center;
   text-align: center;
   padding: 15px;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
+  overflow-y: auto;          /* 🔥 enables scrolling */
+  scrollbar-width: thin;     /* Firefox scrollbar */
+}
+
+/* custom scrollbar styling for gist overlay */
+.gist::-webkit-scrollbar {
+  width: 8px;
+}
+
+.gist::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.gist::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hover:hover .gist {
   opacity: 1;
+  pointer-events: auto;      /* allow interaction (scrolling) */
 }
 
 /* ---------- Contact Info (always bottom) ---------- */

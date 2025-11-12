@@ -29,7 +29,7 @@ export default function Reading() {
             <div className={styles.hover}>
               <img src="./Hobbit.jpeg" alt="Hobbit" />
               <p className={styles.gist}>
-                <strong>The Hobbit</strong> by J.R.R. Tolkien follows Bilbo Baggins as he joins a group of dwarves on an epic quest to reclaim treasure from Smaug the dragon, encountering trolls, goblins, and the mysterious Gollum along the way.
+                "The Hobbit" by J.R.R. Tolkien, follows Bilbo Baggins as he joins a group of dwarves on an epic quest to reclaim treasure from Smaug the dragon, encountering trolls, goblins, and the mysterious Gollum along the way.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Reading() {
             <div className={styles.hover}>
               <img src="./ReadyPlayerOne.png" alt="ReadyPlayerOne" />
               <p className={styles.gist}>
-                <strong>Ready Player One</strong> by Ernest Cline follows Wade Watts in a virtual reality world called the OASIS as he hunts an Easter egg hidden by its creator, facing puzzles and rivals while learning about friendship and courage.
+                "Ready Player One" by Ernest Cline, follows Wade Watts in a virtual reality world called the OASIS as he hunts an Easter egg hidden by its creator, facing puzzles and rivals while learning about friendship and courage.
               </p>
             </div>
           </div>
