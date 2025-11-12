@@ -138,31 +138,26 @@
   .football {
     flex-direction: column;
     align-items: center;
+    margin: 20px;
   }
 
   .wrestling p,
   .football p {
-    max-width: 100%;
+    width: 90%;             /* expand paragraph width on mobile */
+    max-width: 600px;       /* prevent from stretching too far */
+    margin: 0 auto 20px;    /* center with bottom spacing */
+    border-radius: 10px;    /* keep rounded corners */
+    text-align: left;       /* maintain readable alignment */
   }
 
   .wrestling img,
   .football img {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-
-  /* === Updated for both wrestling and football === */
-  .wrestling img,
-  .football img {
-    max-width: calc(100% - 40px); /* leaves 20px space on each side */
-    margin: 20px;                 /* top/right/bottom/left spacing */
-    border-radius: 10px;          /* ensure rounded corners remain */
-    box-sizing: border-box;
-  }
-
-  .wrestling p,
-  .football p {
-    margin: 0 20px; /* match horizontal spacing with images */
+    width: 90%;             /* match paragraph width */
+    height: auto;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    object-fit: contain;    /* prevent cropping */
+    display: block;
   }
 }
