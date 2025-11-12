@@ -8,6 +8,7 @@
   min-height: 100vh;
   color: #fff;
   padding: 2rem;
+  padding-top: 6rem; /* Added: ensures title sits below back button */
 }
 
 /* Title and score */
@@ -152,6 +153,7 @@
 @media (max-width: 768px) {
   .page {
     padding: 1rem;
+    padding-top: 5rem; /* Adjusted for smaller screen so back button still doesn't cover title */
   }
 
   .title {
