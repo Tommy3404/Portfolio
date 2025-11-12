@@ -26,7 +26,7 @@
   position: relative;
   width: 100%;
   max-width: 1000px;
-  height: 500px;
+  min-height: 500px; /* ensures table area is always visible even with no cards */
   background: radial-gradient(circle at center, #006400 0%, #004000 100%);
   border-radius: 20px;
   display: flex;
@@ -127,14 +127,15 @@
   min-height: 2rem;
 }
 
+/* Back button */
 .backBtn {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   background-color: #e74c3c;
   color: #fff;
   font-size: 2rem;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -147,4 +148,39 @@
   transform: scale(1.05);
 }
 
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem;
+  }
 
+  .title {
+    font-size: 2rem;
+  }
+
+  .score {
+    font-size: 1.2rem;
+  }
+
+  .table {
+    min-height: 400px; /* smaller but still visible on mobile */
+    padding: 1.5rem;
+  }
+
+  .card {
+    width: 60px;
+    height: 90px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .backBtn {
+    top: 15px;
+    left: 15px;
+    font-size: 1.6rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
