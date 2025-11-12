@@ -65,6 +65,11 @@
 }
 
 /* Wrestling layout (text left, image right) */
+.wrestling {
+  justify-content: flex-start;
+  margin-left: 150px; /* mirror football’s right margin */
+}
+
 .wrestling p {
   flex: 1;
   max-width: 600px;
@@ -76,6 +81,7 @@
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+  margin-left: 200px; /* mirror football’s image spacing */
 }
 
 /* Football layout (image left, text right) */
@@ -143,16 +149,20 @@
   .football img {
     max-width: 100%;
     margin-top: 20px;
-    margin-left: 0; /* Reset margin on small screens */
+    margin-left: 0;
   }
 
-  /* === Updated: keep rounded corners and add spacing from screen edges ===
-     Use horizontal margins and reduce max-width so the image doesn't touch edges.
-     This preserves border-radius and avoids padding on the <img>. */
+  /* === Updated for both wrestling and football === */
+  .wrestling img,
   .football img {
     max-width: calc(100% - 40px); /* leaves 20px space on each side */
     margin: 20px;                 /* top/right/bottom/left spacing */
     border-radius: 10px;          /* ensure rounded corners remain */
-    box-sizing: border-box;       /* safe so margin doesn't cause overflow */
+    box-sizing: border-box;
+  }
+
+  .wrestling p,
+  .football p {
+    margin: 0 20px; /* match horizontal spacing with images */
   }
 }
