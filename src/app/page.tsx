@@ -61,37 +61,41 @@ export default function Home() {
 
       <div className={styles.contact}>
         <h2>Contact Information</h2>
-        <p>
-  Email:{" "}
+        <div className={styles.contactinfo}>
+          <p>
   <a 
     href="https://mail.google.com/mail/?view=cm&to=luckyluigi34@gmail.com" 
     target="_blank" 
     rel="noopener noreferrer"
     className={styles.link}
   >
-    luckyluigi34@gmail.com
+    <img src="./gmaillogo.png" alt="gmail" />
   </a>
 </p>
-        <p>GitHub: 
+        <p> 
           <a 
           href="https://github.com/Tommy3404/Tommy3404"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}>
-           Tommy3404
+           
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+          
           </a>
         </p>
         <p>
-          LinkedIn:{" "}
           <a 
             href="https://www.linkedin.com/in/tommy-mcclure-55879b353/" 
             target="_blank" 
             rel="noopener noreferrer"
             className={styles.link}
           >
-            Tommy McClure
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+          
           </a>
         </p>
+        </div>
       </div>
     </div>
   );
