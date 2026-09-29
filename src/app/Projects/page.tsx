@@ -73,6 +73,24 @@ export default function Projects() {
             </p>
           </div>
         </div>
+
+        {/* Tiny Tigers Daycare */}
+        {/* <div className={styles.project}>
+          <div className={styles.hover}>
+            <img src="./TinyTigerDaycare.png" alt="Tiny Tigers Daycare" />
+            <a
+              href="https://tinytigers.tommymcclure.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              Tiny Tigers Daycare
+            </a>
+            <p className={styles.description}>
+              This was my finals project for my second year at Fort Hays Tech Northwest. This project was designed for the new daycare center that had just opened up at the college. The purpose of this website was for parents/gardians to be able to look at what this daycare does, be able to see the staff members of the daycare, and be able to get their child put on the waitlist for the daycare.
+            </p>
+          </div>
+        </div> */}
       </div>
 
       {/* Contact Information */}

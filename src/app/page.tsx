@@ -27,9 +27,10 @@ export default function Home() {
       <div className={styles.align}>
         <div className={styles.textSection}>
           <div className={styles.description}>
-            <p>Hello, my name is Tommy McClure. I am 21 years old and attending college at Fort Hays Tech Northwest. Here are some interesting facts about me:</p>
+            <p>Hello, my name is Tommy McClure. I am 21 years old and attending college at Fort Hays State University. I graduated Fort Hays Tech Northwest with an associates degree in App Development and Emerging Technologies. Here are some interesting facts about me:</p>
             <ul>
-              <li>I wrestled for 9 years.</li>
+              <li>I have been participating in sports from when I was in kindergarden to my first year in college.</li>
+              <li>My favorite sport is wrestling.</li>
               <li>I like to play video games</li>
               <li>I want to become a game developer</li>
               <li>I am currently certified in Swift</li>
@@ -44,8 +45,10 @@ export default function Home() {
               <ul>
                 <li>Xcode</li>
                 <li>Swift</li>
+                <li>Kotlin</li>
                 <li>React</li>
                 <li>Node.js</li>
+                <li>Next.js</li>
                 <li>Express</li>
                 <li>MongoDB</li>
                 <li>Git & GitHub</li>
