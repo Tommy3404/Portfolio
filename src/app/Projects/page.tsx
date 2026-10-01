@@ -33,7 +33,7 @@ export default function Projects() {
               Portfolio 1.0
             </a>
             <p className={styles.description}>
-              This is my first portfolio page. I designed it my first year at Fort Hays Tech Northwest.
+              This is my first portfolio page. I designed it my first year at Fort Hays Tech Northwest. I didn't have a lot of knowledge on how to make a website look good. I used those colors because I thought that if I used a lot of colors, it would look nice. It in fact did not look nice.
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function Projects() {
               The Last Commit
             </a>
             <p className={styles.description}>
-              This is a scary story page that I made when the entire class was tasked to design a website that had scary stories for Halloween.
+              This is a scary story page that I made when the entire class was tasked to design a website that had scary stories for Halloween. Each person was tasked with creating their own scary story. After we finished, we tried to make a QR code on a pumpkin for people to scan and get access to the website, but we weren't able to.
             </p>
           </div>
         </div>
@@ -69,16 +69,16 @@ export default function Projects() {
               National Park Website
             </a>
             <p className={styles.description}>
-              This was the first project that the entire class had to do together. We each made a website about a national park and then combined them into one website.
+              This was the first project that the entire class had to do together. We each made a website about a national park and then combined them into one website. I chose Rocky Mountain National Park and then put a description below the pumpkin. 
             </p>
           </div>
         </div>
 
         {/* Tiny Tigers Daycare */}
-        {/* <div className={styles.project}>
+        <div className={styles.project}>
           <div className={styles.hover}>
             <img src="./TinyTigerDaycare.png" alt="Tiny Tigers Daycare" />
-            <a
+              <a
               href="https://tinytigers.tommymcclure.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -87,10 +87,10 @@ export default function Projects() {
               Tiny Tigers Daycare
             </a>
             <p className={styles.description}>
-              This was my finals project for my second year at Fort Hays Tech Northwest. This project was designed for the new daycare center that had just opened up at the college. The purpose of this website was for parents/gardians to be able to look at what this daycare does, be able to see the staff members of the daycare, and be able to get their child put on the waitlist for the daycare.
+              This was my finals project for my second year at Fort Hays Tech Northwest. This project was designed for the new daycare center that had just opened up at the college. The purpose of this website was for parents/gardians to be able to look at what this daycare does, be able to see the staff members of the daycare, and be able to get their child put on the waitlist for the daycare. This project and all of its contents belongs to Fort Hays Tech Northwest. 
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Contact Information */}

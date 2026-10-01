@@ -81,6 +81,10 @@
   position: relative;
 }
 
+.hover a{
+  margin-bottom: 60px;
+}
+
 .projectLink,
 .projectName,
 .description {
